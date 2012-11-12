@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Auto DIV</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="../src/jquery.ikutan.js"></script>
+<style type="text/css">
+	#container {
+		display: block;
+		width: auto;
+		min-height: 500px;
+		padding: 5px;
+		background: #4D7BA7; 
+		margin: 0px;
+	}
+	
+	#container div {
+		padding: 3px;
+	}
+	
+	#col1 {
+		float: left;
+		display: block;
+		width: 350px;
+		background: #E0B87A;
+		margin: 5px;
+	}
+	
+	#col2 {
+		float: left;
+		display: block;
+		width: 350px;
+		background: #669966;
+		margin: 5px;
+	}
+	
+	#col3 {
+		float: left;
+		display: block;
+		width: 350px;
+		background: #CCC;
+		margin: 5px;
+	}
+</style>
+</head>
+
+<body>
+	<div id="container">
+		<div id="col1">Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.</div>
+		<div id="col2">Ini adalah kolom 2.Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.</div>
+		<div id="col3">Ini adalah kolom 2.Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.<br>Ini adalah kolom 1.Ini adalah kolom 1.<br>Ini adalah kolom 1.<br></div>
+	</div>
+</body>
+<script type="text/javascript">
+$(function(){
+	$('#container').ikutan();
+});
+</script>
+</html>
