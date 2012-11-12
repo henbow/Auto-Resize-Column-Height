@@ -11,12 +11,18 @@ if (jQuery) (function($) {
 			if(!opt) var opt = {};
 			if(opt.target == undefined) opt.target = 'div';
 			if(opt.bottomPadding == undefined) opt.bottomPadding = 0;
-			console.log(opt.bottomPadding);
+			if(opt.animate == undefined) opt.animate = false;
 			
 			var self = $(this);
 			var heights = $(this).children(opt.target).map(function (){ return $(this).height(); }).get();
-		    var maxHeight = Math.max.apply(null, heights);		    
-		    $(this).children().height(maxHeight);
+		    var maxHeight = Math.max.apply(null, heights);
+		    
+		    if(opt.animate) {
+			    $(this).children().animate({'height':maxHeight});
+		    } else {
+		    	$(this).children().height(maxHeight);
+		    }		    
+		    
 		    $(this).height(maxHeight + opt.bottomPadding);
 		}
 	});
