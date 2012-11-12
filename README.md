@@ -1,0 +1,1 @@
+Simple JQuery plugin to set same height of DIV (or other HTML tags) column.
