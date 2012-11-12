@@ -8,16 +8,16 @@
 if (jQuery) (function($) {
 	$.extend($.fn, {
 		ikutan: function(opt){
-			var opt = {};
-			
+			if(!opt) var opt = {};
 			if(opt.target == undefined) opt.target = 'div';
-			if(opt.paddingBottom == undefined) opt.paddingBottom = 0;
+			if(opt.bottomPadding == undefined) opt.bottomPadding = 0;
+			console.log(opt.bottomPadding);
 			
 			var self = $(this);
 			var heights = $(this).children(opt.target).map(function (){ return $(this).height(); }).get();
 		    var maxHeight = Math.max.apply(null, heights);		    
 		    $(this).children().height(maxHeight);
-		    $(this).height(maxHeight + opt.paddingBottom);
+		    $(this).height(maxHeight + opt.bottomPadding);
 		}
 	});
 })(jQuery);	
