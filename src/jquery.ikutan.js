@@ -2,7 +2,7 @@
  * jquery.ikutan.js
  * Auto height div column
  * @author Hendro Wibowo (hendro@tiwule.net)
- * 
+ * @since 13 November 2012
  */
 
 if (jQuery) (function($) {
@@ -14,16 +14,16 @@ if (jQuery) (function($) {
 			if(opt.animate == undefined) opt.animate = false;
 			
 			var self = $(this);
-			var heights = $(this).children(opt.target).map(function (){ return $(this).height(); }).get();
+			var heights = self.children(opt.target).map(function (){ return self.height(); }).get();
 		    var maxHeight = Math.max.apply(null, heights);
 		    
 		    if(opt.animate) {
-			    $(this).children().animate({'height':maxHeight});
+			    self.children().animate({'height':maxHeight});
 		    } else {
-		    	$(this).children().height(maxHeight);
-		    }		    
+		    	self.children().height(maxHeight);
+		    }
 		    
-		    $(this).height(maxHeight + opt.bottomPadding);
+		    self.height(maxHeight + opt.bottomPadding);
 		}
 	});
 })(jQuery);	
